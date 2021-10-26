@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C3C0C0"
+        android:text="@string/btn_fragment1"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C3C0C0"
+        android:text="@string/btn_fragment2"
+        android:textColor="#000000" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_01"
+        android:name="com.example.lab04.Fragment01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_01" />
+</LinearLayout>
